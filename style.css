@@ -1,16 +1,97 @@
-* { 
-    box-sizing: border-box; 
-    margin: 0; 
-    padding: 0; 
-    font-family: 'Plus Jakarta Sans', sans-serif; 
-}
+/* Fondo general con degradado premium y moderno */
 body {
-    background: radial-gradient(circle at top right, #1e1b4b, #0f172a 60%);
-    min-height: 100vh; 
+    background: linear-gradient(135deg, #0f172a 0%, #1e1b4b 50%, #311042 100%);
+    min-height: 100vh;
     display: flex;
-    flex-direction: column; 
+    justify-content: center;
     align-items: center;
-    padding: 60px 20px;
-    color: #f8fafc;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    margin: 0;
 }
-/* ... y todo el resto de tus estilos estéticos ... */
+
+/* Tarjeta de Login estilo "Glassmorphism" profesional */
+#loginSection {
+    background: rgba(30, 27, 75, 0.45);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 24px;
+    padding: 40px;
+    width: 100%;
+    max-width: 400px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+/* Título estilizado */
+#loginSection h2 {
+    color: #ffffff;
+    font-size: 28px;
+    font-weight: 700;
+    margin-bottom: 30px;
+    letter-spacing: -0.5px;
+}
+
+/* Contenedor de los campos de entrada */
+.input-group {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.input-group label {
+    display: block;
+    color: #94a3b8;
+    font-size: 13px;
+    font-weight: 500;
+    margin-bottom: 8px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+/* Campos de texto modernos e interactivos */
+.input-group input {
+    width: 100%;
+    padding: 14px 16px;
+    background: rgba(15, 23, 42, 0.6);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+    color: #ffffff;
+    font-size: 15px;
+    transition: all 0.2s ease;
+    box-sizing: border-box;
+}
+
+/* Efecto al hacer clic en las casillas */
+.input-group input:focus {
+    outline: none;
+    border-color: #a855f7;
+    background: rgba(15, 23, 42, 0.8);
+    box-shadow: 0 0 0 4px rgba(168, 85, 247, 0.25);
+}
+
+/* Botón de ingreso con degradado y animación */
+#loginSection button {
+    width: 100%;
+    padding: 14px;
+    background: linear-gradient(135deg, #a855f7 0%, #7c3aed 100%);
+    border: none;
+    border-radius: 12px;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    box-shadow: 0 4px 12px rgba(124, 58, 237, 0.3);
+    margin-top: 10px;
+}
+
+#loginSection button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(124, 58, 237, 0.5);
+    background: linear-gradient(135deg, #b55fe6 0%, #8b46ff 100%);
+}
+
+#loginSection button:active {
+    transform: translateY(0);
+}
