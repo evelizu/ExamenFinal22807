@@ -1,26 +1,60 @@
 <!DOCTYPE html>
+
+
+
+
+
 <html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SGT Hospital - UMG</title>
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
-    
-    <!-- 1. AQUÍ ENLAZAMOS TU NUEVO ARCHIVO DE ESTILOS -->
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./style.css">
 </head>
 <body>
 
-    <!-- PASO 1: LOGIN AESTHETIC -->
-    <div class="card" id="loginSection"> ... </div>
+    <div class="card" id="loginSection">
+        <h2>Acceso al Portal</h2>
+        <form id="loginForm">
+            <div class="form-group">
+                <label for="usernameInput">ID USUARIO</label>
+                <input type="text" id="usernameInput" placeholder="Ej: oaranam3" required>
+            </div>
+            <div class="form-group">
+                <label for="passwordInput">CONTRASEÑA</label>
+                <input type="password" id="passwordInput" placeholder="••••••••" required>
+            </div>
+            <button type="submit" class="btn-action">Ingresar al Sistema</button>
+        </form>
+    </div>
 
-    <!-- PASO 2: ENVIAR MENSAJE -->
-    <div class="card" id="chatSection"> ... </div>
+    <div class="card" id="chatSection">
+        <h2>Enviar Mensaje</h2>
+        <form id="mensajeForm">
+            <div class="form-group">
+                <label for="mensajeInput">TU MENSAJE</label>
+                <input type="text" id="mensajeInput" placeholder="Escribe algo aesthetic aquí..." required>
+            </div>
+            <button type="submit" class="btn-action btn-verde">Transmitir Datos</button>
+        </form>
+    </div>
 
-    <!-- PASO 3: MONITOR DE CHAT -->
-    <div class="card" id="viewSection"> ... </div>
+    <div class="card" id="viewSection">
+        <h2>Historial Global</h2>
+        <button id="btnCargarMensajes" class="btn-action btn-azul">Refrescar Consola</button>
+        
+        <div id="cajaChat">
+            <div style="text-align: center; color: #475569; font-size: 13px; margin-top: 20px;">
+                Sincronizando feed de datos...
+            </div>
+        </div>
+    </div>
 
-    <!-- 2. AQUÍ ENLAZAMOS TU NUEVO ARCHIVO DE LÓGICA -->
-    <script src="app.js"></script>
+    <script src="./app.js"></script>
 </body>
 </html>
+
+
+
+
